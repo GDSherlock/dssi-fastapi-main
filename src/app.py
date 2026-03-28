@@ -10,7 +10,7 @@ model, features = retrieve(appconfig['Model']['name'])
 
 @app.get(appconfig['API']['home'])
 def home():
-    return {"message": "Welcome to DSSI API v2.0!"}
+    return {"message": "Welcome to DSSI API v3.0!"}
 
 @app.post(appconfig['API']['used_car_price'])
 def predict(data: dict):
